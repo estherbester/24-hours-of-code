@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,14 +12,16 @@
     <title>Cover Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{% static "dist/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "dist/bootstrap/3.2.0/css/bootstrap.min.css" %}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="{% static "css/cover.css" %}" rel="stylesheet">
 
+    <!-- Custom styles for this site -->
+    <link href="{% static "css/site.css" %}" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-
       <script src="{% static "dist/html5shiv/3.7.2/html5shiv.min.js" %}"></script>
       <script src="{% static "dist/respond/1.4.2/respond.min.js" %}"></script>
     <![endif]-->
@@ -54,7 +56,7 @@
 
           <div class="mastfoot">
             <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+              <p>img credit: <a href="https://www.flickr.com/photos/14723335@N05/12722778014">Mark Stevens</a></p>
             </div>
           </div>
 
@@ -69,9 +71,9 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="{% static "dist/jquery/1.11.1/jquery.min.js" %}"></script>
 
-    <script src="{% static "dist/bootstrap/js/bootstrap.min.js" %}"></script>
-    <script src="{% static "dist/holder/holder/2.3.2/docs.min.js" %}"></script>
+    <script src="{% static "dist/bootstrap/3.2.0/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "dist/holder/2.3.2/docs.min.js" %}"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="dist/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="{% static "dist/bootstrap/js/ie10-viewport-bug-workaround.js" %}"></script>
   </body>
 </html>
