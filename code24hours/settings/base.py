@@ -15,8 +15,6 @@ def env_or_default(NAME, default):
     return os.environ.get(NAME, default)
 
 # Top level of our source / repository
-PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__),
-                                            os.pardir))
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -62,7 +60,7 @@ DATABASES = {
 }
 
 TEMPLATE_DIRS = [
-    os.path.join(PROJECT_ROOT, "templates"),
+    os.path.join(BASE_DIR, "templates"),
 ]
 
 # Internationalization
@@ -85,3 +83,5 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
