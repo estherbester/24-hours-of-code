@@ -4,7 +4,7 @@ from django.contrib import admin
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'code24hours.teaser.views.placeholder', name='placeholder'),
-    #url(r'^blog/', include('blog.urls')),
 
-    url(r'^admin/', include(admin.site.urls)),
+    # disable admin urls for now, don't need it
+    # url(r'^admin/', include(admin.site.urls)),
 )
