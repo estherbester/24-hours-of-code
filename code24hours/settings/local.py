@@ -1,7 +1,5 @@
 from .base import *
 
-SECRET_KEY = 'a^a-1#5=h_4p9f9*75yu$-q3y(7s!onf2$ra-qo9^_*3@*a2qx'
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -9,6 +7,7 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+SECRET_KEY = "--fake secret key for dev only--"
 
 DATABASES = {
     "default": {

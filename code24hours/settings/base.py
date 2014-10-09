@@ -17,6 +17,8 @@ def env_or_default(NAME, default):
 # Top level of our source / repository
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+SECRET_KEY = os.environ.get('SECRET_KEY')
+
 
 # Quick-start development settings - unsuitable for production
 
